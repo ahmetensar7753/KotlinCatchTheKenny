@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Time : "
+        android:textColor="#BA0101"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLİCK ME !"
+        android:textColor="#8BC34A"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Score : 0"
+        android:textColor="#2196F3"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime" />
+
+
+    <ImageView
+        android:id="@+id/imageViewKenny2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="artir"
+        app:layout_column="0"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewKenny7"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenny9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_row="0"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="artir"
+        app:layout_column="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKenny3"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKenny5"
+        app:layout_row="0"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="162dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="38dp"
+        android:onClick="artir"
+        app:layout_column="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenny"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKenny6"
+        app:layout_row="0"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="artir"
+        app:layout_column="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenny6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKenny7"
+        app:layout_row="1"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:onClick="artir"
+        app:layout_column="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewKenny"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKenny6"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKenny8"
+        app:layout_row="1"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="83dp"
+        android:onClick="artir"
+        app:layout_column="2"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewKenny3"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenny5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKenny4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_row="1"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="120dp"
+        android:onClick="artir"
+        app:layout_column="0"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewKenny4"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewKenny8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKenny2"
+        app:layout_row="2"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="51dp"
+        android:onClick="artir"
+        app:layout_column="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewKenny5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKenny7"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewKenny9"
+        app:layout_row="2"
+        app:srcCompat="@drawable/kenny" />
+
+    <ImageView
+        android:id="@+id/imageViewKenny9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="39dp"
+        android:onClick="artir"
+        app:layout_column="2"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewKenny8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewKenny2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_row="2"
+        app:srcCompat="@drawable/kenny" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
